@@ -1,0 +1,33 @@
+CREATE TABLE `registation` (
+  `id` int(10) NOT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `userid` int(11) NOT NULL,
+  `sponsorid` varchar(10) NOT NULL,
+  `mobileno` bigint(10) DEFAULT NULL,
+  `emailid` varchar(255) DEFAULT NULL,
+  `mtype` varchar(100) DEFAULT 'A.B.M',
+  `mrole` varchar(10) NOT NULL,
+  `mstatus` varchar(10) NOT NULL DEFAULT 'Active',
+  `password` varchar(255) DEFAULT NULL,
+  `fname` varchar(255) DEFAULT NULL,
+  `dob` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `caddress` varchar(255) DEFAULT NULL,
+  `panno` varchar(255) DEFAULT NULL,
+  `education` varchar(255) DEFAULT NULL,
+  `amobileno` bigint(10) DEFAULT NULL,
+  `pic` varchar(255) DEFAULT '../Userpic/notavailable.png',
+  `gender` varchar(10) DEFAULT NULL,
+  `pcom` bigint(10) DEFAULT 0,
+  `grade` varchar(100) NOT NULL,
+  `cerstatus` int(2) NOT NULL,
+  `proup` int(2) NOT NULL,
+  `cdate` varchar(100) NOT NULL,
+  `branch` varchar(100) NOT NULL,
+  `regdate` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+
+
+INSERT INTO `users` (`id`, `username`, `userid`, `sponsorid`, `mobileno`, `emailid`, `mtype`, `mrole`, `mstatus`, `password`, `fname`, `dob`, `address`, `caddress`, `panno`, `education`, `amobileno`, `pic`, `gender`, `pcom`, `grade`, `cerstatus`, `proup`, `cdate`, `branch`, `regdate`) VALUES
+(43, 'SITE_ADMIN', 1022, '1001', 9336505051, 'test@gmail.com', 'CCC', 'Admin', 'Active', '21232f297a57a5a743894a0e4a801fc3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '../Userpic/notavailable.png', NULL, 0, 'A+', 1, 0, '', '', '2024-04-26 09:14:42');
